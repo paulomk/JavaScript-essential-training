@@ -20,3 +20,7 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+/*Showing the backpack object in the console when the JS script is loaded.
+This has a string and an object*/
+console.log("The backpack object: ", backpack);
