@@ -22,3 +22,20 @@ const backpack = {
 };
 
 console.log("The backpack object:", backpack);
+
+//dot notation
+console.log("The pocketNum value: ", backpack.pocketNum);
+console.log("Strap lengh L: ", backpack.strapLength.left);
+
+//bracket notation -> more control and functionalities
+console.log("The pocketNum value: ", backpack["pocketNum"]);
+console.log("Strap lengh L: ", backpack["strapLength"]["left"]);
+//with bracket notation you can use a variable as a query to access a property. see bellow
+let query = "pocketNum";
+console.log(query + ": ", backpack[query]);
+query = "color";
+console.log(query + ": ", backpack[query]);
+
+/*bracket notation also allows you to access properties that breaks convetions
+e.g.: ["property-hypen"]
+*/
