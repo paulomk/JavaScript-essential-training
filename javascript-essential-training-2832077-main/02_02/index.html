@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module demo</title>
-    <script src="script.js"></script>
+    <!-- adding the JS script here will throw and error, as the body element that is used in JS is not created yet (interpreted)
+      <script src="script.js"></script>
+    -->
   </head>
-  <body></body>
+  <body>
+    <!-- Adding the script here would fix the error -->
+    <script src="script.js"></script>
+  </body>
 </html>
